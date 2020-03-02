@@ -1,1 +1,1 @@
-# Use of html, css and js to create an application to calculate students CGPA
+# Use of html, css and js to create an application to calculate students CGPA and you can test run it here https://sirdohcgpacalculator.netlify.com/
