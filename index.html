@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>CGPA CALCULATOR</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="heading1">CGPA Calculator</h1>
+
+        <div class="card">
+           <div class="top">
+                <div class="grade">
+                    <div id="loading">
+                        <img id="load" src="img/loading.gif" alt="loading">
+                    </div>
+                    <div class="grade-point">
+                        <h5 id="degree">You have no CGPA</h5>
+                        <div id="grade-point">
+                            <label for="cgpa" class="label">CGPA(/5.00)</label>
+                            <input type="number" id="cgpa" class="grade" disabled >                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="add-form">    
+                    <form id="gpa-form">
+                        <div class="form">
+                            <input type="text" id="courseCode" class="form-control" placeholder="Course Code" > 
+                        </div>
+                        <div class="form">
+                            <input type="text" id="courseName" class="form-control" placeholder="Course Name" >
+                        </div>
+                        <div class="form">
+                            <input type="number" id="unit" class="form-control" placeholder="Unit" >
+                        </div>
+                        <div class="form">
+                            <input type="number" id="score" class="form-control" placeholder="Score" >
+                        </div>
+                        <div class="form">
+                            <input type="submit" value="Add Course" id="add" class="btn btn-primary btn-inline-block">
+                        </div>        
+                    </form>
+                </div>
+            </div>          
+                    
+            <div class="bottom">
+                <div id="result" class="pt-4">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Course Name</th>
+                                    <th>Unit</th>
+                                    <th>Score</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody id="courses"></tbody>
+                        </table>
+                </div>  
+                <div class="gp-btn">
+                    <span id="calc-gp" class="btn btn-primary">Calculate CGPA</span>
+                </div>
+             </div>
+        </div>       
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> --> 
+    <script src="app.js"></script>
+</body>
+</html>
