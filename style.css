@@ -113,11 +113,14 @@ th{
     text-align: center;
 
 }
+td{
+    text-align: center;
+}
 .score-style{
     text-align: center;
     width: 50px;
     color: black;
-    margin-left: 70px;
+    
 }
 .delete{
     color: red;
